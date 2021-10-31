@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="site-container">
+    <div class="header">
+        <h1>Admmingränssnitt för Marcus REST-webbtjänst</h1>
+        <button class="logout" id="logMeOut">Logga ut</button>
+    </div>
+    <main>
+        <!--Studier-->
+        <section class="studies" id="studies">
+            <div class="width">
+                <h2>Studier:</h2>
+                <p id="studieUpdated"></p>
+                <p id="studieError"></p>
+                <div class="studies-container" id="studies-container">
+                    <!--Content from main.js-->
+                </div>
+            </div>
+
+            <div class="form-container" id="form-container">
+                <h2>Lägg till Studie</h2>
+                <div class="form">
+                    <label for="school">Skola:</label>
+                    <input type="text" id="uni">
+                    <br>
+                    <label for="education">Utbildning:</label>
+                    <input type="text" id="edu">
+                    <br>
+                    <label for="schoolStart">Start-datum:</label>
+                    <input type="date" placeholder="2000-01-01" id="schoolStart">
+                    <br>
+                    <label for="schoolEnd">Slut-datum:</label>
+                    <input type="date" placeholder="2000-01-01" id="schoolEnd">
+                    <br>
+                    <button id="addStudie">Lägg till studie</button>
+                </div>
+                <div>
+                    <p class="StudieErrorMessage"></p>
+                </div>
+            </div>
+        </section>
+        <!--Jobb-->
+        <section class="jobs" id="jobs">
+            <div class="width">
+                <h2>Jobb:</h2>
+                <p id="jobUpdated"></p>
+                <p id="jobError"></p>
+                <div class="jobs-container" id="jobs-container">
+                    <!--Content from main.js-->
+                </div>
+            </div>
+            <div class="form-container">
+                <h2>Lägg till jobb</h2>
+                    <div class="form">
+                        <label for="school">Arbetsplats:</label>
+                        <input type="text" id="job">
+                        <br>
+                        <label for="education">Roll:</label>
+                        <input type="text" id="jobTitle">
+                        <br>
+                        <label for="schoolStart">Start-datum:</label>
+                        <input type="date" placeholder="2000-01-01" id="jobStart">
+                        <br>
+                        <label for="schoolEnd">Slut-datum:</label>
+                        <input type="date" placeholder="2000-01-01" id="jobEnd">
+                        <br>
+                        
+                        <button id="addJob">Lägg till jobb</button>
+                    </div>
+                    <div>
+                        <p class="JobErrorMessage"></p>
+                    </div>
+            </div>    
+        </section>
+        <!--Webbsidor-->
+        <section class="sites" id="sites">
+            <div class="width">
+                <h2>Hemsidor:</h2>
+                <p id="siteUpdated"></p>
+                <p id="siteError"></p>
+                <div class="sites-container" id="sites-container">
+                    <!--Content from main.js-->
+                </div>
+            </div>
+            <div class="form-container">
+                <h2>Lägg till hemsida</h2>
+                <div class="form">
+                    <label for="siteTitle">Arbetsplats:</label>
+                    <input type="text" id="siteTitle">
+                    <br>
+                    <label for="url">Roll:</label>
+                    <input type="text" id="url">
+                    <br>
+                    <label for="info">Beskrivning:</label>
+                    <textarea name="info" id="info"></textarea>
+                    <button id="addSite">Lägg till jobb</button>
+                </div>
+                <div>
+                    <p class="SiteErrorMessage"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    </div>
+    <script src="login.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

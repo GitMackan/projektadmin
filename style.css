@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    font-family: 'Roboto', sans-serif; 
+}
+h1 {
+    margin: 3em 0;
+    text-align: center;
+}
+h2 {
+    margin-top: 3em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.site-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.studies-container, .jobs-container, .sites-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    width: 100%;
+}
+.studies, .jobs, .sites {
+    border: 1px solid black;
+    padding: 2em;
+    border-radius: 15px;
+    margin-bottom: 3em;
+}
+.studies {
+    background: rgb(248, 248, 248);
+}
+.jobs {
+    background: rgb(248, 248, 248);
+}
+.sites {
+    background: rgb(248, 248, 248);
+}
+.card {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 1em;
+    background: rgb(224, 224, 224);
+}
+.card p {
+    margin-bottom: 1em;
+}
+.delete {
+    background: red;
+    color:white
+}
+.update {
+    background: green;
+    color: white;
+    margin-top: 1em;
+}
+button {
+    cursor: pointer;
+}
+
+/* FORM */
+.form-container {
+    width: 100%;
+    display: grid;
+}
+form {
+    width: 30vw;
+}
+label {
+    font-size: 1.5em;
+    display: block;
+}
+input {
+    height: 2em;
+    width: 100%;
+}
+#addStudie, #addJob, #addSite {
+    margin-top: 1em;
+    width: 50%;
+    background: green;
+    color: white;
+    margin-left: 25%;
+    height: 3em;
+}
+button:hover {
+    text-decoration: underline;
+}
+input[type=submit] {
+    margin-bottom: 1em;
+}
+button {
+    height: 2em;
+    padding: .5em;
+    width: 100px;
+    line-height: 1em;
+    font-size: 1em;
+    text-align: center;
+}
+.form {
+    margin: 0 auto;
+    width: 50%;
+}
+.form input {
+    border-radius: 5px;
+    height: 2.5em;
+}
+.StudieErrorMessage, .JobErrorMessage, .SiteErrorMessage {
+    color: red;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 1em;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+}
+#studieUpdated, #jobUpdated, #siteUpdated {
+    color: green;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+#studieError, #jobError, #siteError {
+    color: red;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.login-container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-container input {
+    width: 30%;
+    margin-bottom: 1em;
+}
+.login-container label {
+    margin-bottom: .5em;
+}
+.login-container button {
+    margin-bottom: 1em;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 952px) {
+    /* Sections */
+
+    .studies-container, .jobs-container, .sites-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
