@@ -130,7 +130,7 @@ textarea {
     text-align: center;
     margin-bottom: 1em;
 }
-#studieError, #jobError, #siteError {
+#studieError, #jobError, #siteError, #loginError {
     color: red;
     font-size: 1.5em;
     text-align: center;
@@ -159,11 +159,10 @@ textarea {
     justify-content: space-between;
     align-items: center;
 }
-
-
-
-
-
+.logout {
+    width: 100px;
+    height: auto;
+}
 
 
 
@@ -175,5 +174,24 @@ textarea {
     .studies-container, .jobs-container, .sites-container {
         display: grid;
         grid-template-columns: 1fr;
+    }
+    .login-container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .login-container input {
+        width: 80%;
+        margin-bottom: 1em;
+    }
+    .header {
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    .form {
+        width: 100%;
     }
 }
