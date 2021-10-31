@@ -20,7 +20,7 @@ function validate() {
     if (userEl.value === "admin" && passEl.value === "password") {
         //OK!
         localStorage.setItem("isAuth", "true");
-        window.location.href = 'https://studenter.miun.se/~many2005/dt173g/projektadmin/admin.html';
+        window.location.href = 'admin.html';
     } else {
         loginError.innerHTML = "Fel användarnamn eller lösenord!";
     }
@@ -31,13 +31,12 @@ function checkAuth() {
     let isAuth = localStorage.getItem("isAuth");
     let thisPage = window.location.pathname;
     if (isAuth === "true") {
-         if (thisPage === '../index.html') {
-            window.location.href = 'https://studenter.miun.se/~many2005/dt173g/projektadmin/admin.html';
+        if (thisPage.includes('/index.html')) {
+            window.location.href = 'admin.html';
          }
-    } else
-    {
-        if (thisPage != '../index.html') {
-            window.location.href = 'https://studenter.miun.se/~many2005/dt173g/projektadmin/index.html';
+    } else {
+        if (!thisPage.includes('/index.html')) {
+            window.location.href = 'index.html';
         }
     }
 }
